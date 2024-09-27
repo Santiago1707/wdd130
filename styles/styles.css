@@ -24,6 +24,11 @@ p {
     padding: 0;
 }
 
+h2 { 
+    color: white;
+    text-align: center;
+}
+
 aside {
     width: 1000px;
     margin: auto;
@@ -35,7 +40,7 @@ aside {
 
 aside img {
     width: 200px;
-    margin: 30px -66px 30px -138px;
+    margin: 30px -66px 30px -66px;
     height: auto;
     border: 1px solid rgb(0, 0, 0);
     padding: 1px;
