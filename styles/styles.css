@@ -32,8 +32,8 @@ main {
     max-width: 840px;
 }
 aside {
-    width: 100%;
-    margin: auto;
+    width: 50%;
+    margin: 10px;
     border: 10px solid rgba(0, 0, 0, 0.2);
     background-color: steelblue;
     color: rgb(255, 255, 255);
