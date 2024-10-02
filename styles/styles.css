@@ -1,14 +1,22 @@
-nav { background-color: steelblue;
+:root{
+    --heading-background-color: steelblue;
+    --heading-text-color: white;
+    --heading-title-color: steelblue;
+    --heading-2title-color: white;
+    --heading-2text-color: white;
+    
+}
+nav { background-color: var(--heading-background-color);
 padding: 1px;}
 
 nav a {
-    color: white;
+    color: var(--heading-text-color);
     display: inline-block;
     padding: 20px;
 }
 
 h1 { 
-    color: steelblue;
+    color: var(--heading-title-color);
     text-align: center;
 }
 
@@ -25,7 +33,7 @@ p {
 }
 
 h2 { 
-    color: white;
+    color: var(--heading-2title-color);
     text-align: center;
 }
 main {
@@ -35,8 +43,8 @@ aside {
     width: 40%;
     margin: 10px;
     border: 10px solid rgba(0, 0, 0, 0.2);
-    background-color: steelblue;
-    color: rgb(255, 255, 255);
+    background-color: var(--heading-background-color);
+    color: var(--heading-2text-color);
     text-align: center;
 }
 
