@@ -7,7 +7,7 @@
     
 }
 nav { background-color: var(--heading-background-color);
-padding: 1px;}
+padding: 0px;}
 
 nav a {
     color: var(--heading-text-color);

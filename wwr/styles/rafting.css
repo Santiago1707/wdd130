@@ -1,6 +1,3 @@
-/* rafting.css */
-
-/* Define CSS variables for color scheme */
 :root {
     --primary-color: #242331;  
     --secondary-color: #81E114;
@@ -11,20 +8,20 @@
 
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
     color: var(--text-color);
-    max-width: 1200px; /* Limit width of the page */
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 100%; /* Limit width of the page */
+    margin:  auto;
+    padding: 0 30px;
+    display: inline-block;
 }
 
 /* Headings styling */
 h1 {
     font-size: 2.5em;
     color: var(--primary-color);
-    position: absolute; /* Positioned absolutely in the hero container */
-    top: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
+    position: relative; /* Positioned absolutely in the hero container */
+    top: auto; /* Adjust as needed */
+    left: auto; /* Adjust as needed */
 }
 
 h2, h3, h4 {
@@ -40,37 +37,8 @@ p {
 /* Social media links */
 a {
     text-decoration: none; /* Remove underlines from links */
-    color: var(--accent-color);
-}
-
-a:hover {
-    text-decoration: underline; /* Optional: add underline on hover */
-}
-
-/* Hero container */
-.hero {
-    position: relative;
-    width: 100%;
-    overflow: hidden; /* Prevents content from overflowing */
-}
-
-.hero img {
-    width: 100%; /* Make image fill the container */
-    display: block; /* Remove bottom space from images */
-}
-
-/* Article styling inside hero */
-.hero article {
-    position: absolute; /* Position the article absolutely */
-    bottom: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
-    background-color: var(--background-color); /* Background color */
-    padding: 15px; /* Padding for readability */
-    border-radius: 8px; /* Optional: rounded corners */
-    opacity: 0.9; /* Slight opacity for readability */
-}
-
-.hero article p {
-    float: right; /* Float the paragraph text */
-    margin-left: 20px; /* Add margin to avoid overlapping */
+    color: var(--secondary-color);
+    display: inline-block;
+    margin: 30px;
+    padding: 10px;
 }
