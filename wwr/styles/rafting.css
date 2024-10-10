@@ -5,12 +5,85 @@
     --text-color: #0A0B0A;       
     --background-color: #FFFFFF; 
 }
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+
+nav img {
+    width: 10%; 
+    display: flex;
+    justify-self:auto
 }
 
+nav {
+    background-color: var(--primary-color);
+    padding: 10px;
+    height: 200px;
+}
+
+a {
+    text-decoration: none; /* Remove underlines from links */
+    color: var(--background-color);     
+    border: 5px solid #81E114;
+    padding: 10px;
+    
+}
+
+.hero {
+    position: relative; /* make the hero container relative */
+}
+
+.hero img {
+    width: 100%; /* make the image full-width */
+    height: 100vh; /* make the image full-height */
+    object-fit: cover; /* ensure the image covers the entire container */
+}
+
+.hero h1 {
+    position: absolute; /* posición absoluta */
+    top: 1%; /* posición vertical */
+    left: 50%; /* posición horizontal */
+    transform: translate(-50%, -50%); /* ajustar posición horizontal y vertical */
+    z-index: 2; /* asegurarse de que esté encima del .mission-block */
+    text-align: center; /* centrar el texto */
+    color: #FFFFFF; /* color del texto */
+    font-size: 2.5em; /* tamaño del texto */
+}
+
+
+h1 {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    
+}
+.mission-block {
+    background-color: rgba(255, 255, 255, 0.5); /* fondo transparente */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%; /* ancho horizontal reducido */
+    margin: 0 auto; /* centrar horizontalmente */
+    border-radius: 10px; /* borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* sombra */
+    position: absolute; /* posición absoluta */
+    top: 25%; /* posición vertical */
+    left: 50%; /* posición horizontal */
+    transform: translate(-50%, 0); /* ajustar posición horizontal */
+}
+
+.mission-text {
+    flex-basis: 30%; /* adjust this value to change the width of the text column */
+    margin-right: 100px;/* add some margin between the text and image */
+}
+
+.mission-block img {
+    width: 40%; /* ancho de la imagen */
+    height: auto; /* altura automática */
+    margin: 20px; /* margen entre la imagen y el texto */
+    border-radius: 10px; /* borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* sombra */
+}
 /* Global styles */
 body {
     color: var(--text-color);
@@ -21,16 +94,33 @@ body {
 }
 
 /* Headings styling */
-h1 {
-    font-size: 2.5em;
-    color: var(--primary-color);
-    position: relative; /* Positioned absolutely in the hero container */
-    top: auto; /* Adjust as needed */
-    left: auto; /* Adjust as needed */
+h2, h3{
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+}
+.history-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.history-text {
+    flex-basis: 30%; /* adjust this value to change the width of the text columns */
+    margin: 20px; /* add some margin between the text and image */
 }
 
-h2, h3, h4 {
-    color: var(--secondary-color);
+.history-wrap img {
+    width: 30%; /* adjust this value to change the width of the image */
+    margin: 20px; /* add some margin between the image and text */
+}
+.image-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-block img {
+    width: 18%; /* adjust this value to change the width of each image */
+    margin: 13px; /* add some margin between images */
 }
 
 /* Paragraph styling */
@@ -40,10 +130,4 @@ p {
 }
 
 /* Social media links */
-a {
-    text-decoration: none; /* Remove underlines from links */
-    color: var(--secondary-color);
-    display: inline-block;
-    margin: 30px;
-    padding: 10px;
-}
+
