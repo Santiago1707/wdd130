@@ -33,72 +33,70 @@
     font-family: var(--font-family1);
 }
 
-
-
 .hero {
     position: relative; 
 }
+
 .hero img {
-    width: 100%; /* make the image full-width */
-    height: 100vh; /* make the image full-height */
-    object-fit: cover; /* ensure the image covers the entire container */
+    width: 100%; 
+    height: 100vh; 
+    object-fit: cover;
     padding: 10px;
 }
 
 .hero h1 {
-    position: absolute; /* posición absoluta */
-    top: 10%; /* posición vertical */
-    left: 50%; /* posición horizontal */
-    transform: translate(-50%, -50%); /* ajustar posición horizontal y vertical */
-    z-index: 2; /* asegurarse de que esté encima del .mission-block */
-    text-align: center; /* centrar el texto */
-    color: var(--background-color); /* color del texto */
-    font-size: 4em; /* tamaño del texto */
+    position: absolute; 
+    top: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    text-align: center; 
+    color: var(--background-color); 
+    font-size: 4em; 
     font-family: var(--font-family1);
 }
 
 .mission-block {
-    background-color: rgba(255, 255, 255, 0.8); /* fondo transparente */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 90%; /* ancho horizontal reducido */
-    margin: 0 auto; /* centrar horizontalmente */
-    border-radius: 10px; /* borde redondeado */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* sombra */
-    position: absolute; /* posición absoluta */
-    top: 30%; /* posición vertical */
-    left: 50%; /* posición horizontal */
-    transform: translate(-50%, 0); /* ajustar posición horizontal */
+    width: 90%; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    position: absolute; 
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, 0); 
 }
 
 .mission-text {
-    flex-basis: 60%; /* adjust this value to change the width of the text column */
-    margin-right: 10px;/* add some margin between the text and image */
+    flex-basis: 60%; 
+    margin-right: 10px;
     font-size: 25px; 
     color: var(--primary-color);
     font-family: var(--font-family2);
 }
 
 .mission-block img {
-    width: 30%; /* ancho de la imagen */
-    height: auto; /* altura automática */
-    margin: 20px; /* margen entre la imagen y el texto */
-    border-radius: 10px; /* borde redondeado */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* sombra */
+    width: 30%; 
+    height: auto; 
+    margin: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
-/* Global styles */
+
 body {
     color: var(--text-color);
-    max-width: 100%; /* Limit width of the page */
+    max-width: 100%; 
     margin:  auto;
     padding: 0 30px;
     display: inline-block;
 }
 
-/* Headings styling */
 h2, h3{
     color: var(--secondary-color);
     display: flex;
@@ -106,50 +104,70 @@ h2, h3{
     font-size: 40px;
     font-family: var(--font-family1);
 }
+
 .history-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .history-text {
-    flex-basis: 30%; /* adjust this value to change the width of the text columns */
-    margin: 20px; /* add some margin between the text and image */
+    flex-basis: 30%; 
+    margin: 20px;
     font-size: 22px;
     font-family: var(--font-family2);
 }
 
 .history-wrap img {
-    width: 30%; /* adjust this value to change the width of the image */
-    margin: 20px; /* add some margin between the image and text */
+    width: 30%; 
+    margin: 20px; 
 }
+
 .image-block {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
 }
-.image-block img {
-    width: 18%; /* adjust this value to change the width of each image */
-    margin: 13px; /* add some margin between images */
+
+.image-container {
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 270px;
+}
+
+.image-container figcaption {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-family: var(--font-family2);
+    margin-top: 5px;
 }
 
 footer {
     color: var(--background-color);
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
     padding: 20px;
     border-top: solid 20px #FFFFFF;
     border-bottom: solid 20px #FFFFFF;
-    font-family: var(--font-family2)
 }
-/* Social media links */
-.sociallinks-container {
-    margin-left: auto;
+
+footer > p {
+    font-size: 20px;
+    flex-grow: 1; 
+    text-align: center;
+    font-family: var(--font-family2)
 }
 
 .sociallinks {
+    text-decoration: none;
+    margin-left: auto; 
+    margin-right: 2%;
     display: flex;
-    justify-items: end;
+    justify-content: flex-end;
+    gap: 10px;
 }
