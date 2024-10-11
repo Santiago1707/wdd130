@@ -14,9 +14,10 @@
     align-items: center;
     background-color: var(--primary-color);
     padding: 30px;
-    border-top: solid 20px var(--background-color);
-    border-bottom: solid 20px var(--background-color);
-    border-left: solid 20px var(--background-color);
+    border-top: solid 10px var(--background-color);
+    border-bottom: solid 10px var(--background-color);
+    border-left: solid 10px var(--background-color);
+    border-right:  solid 7px var(--background-color);
 }
 
 .main-nav img {
@@ -39,7 +40,7 @@
 }
 
 .hero img {
-    width: 100%; 
+    width: 99%; 
     height: 100vh; 
     object-fit: cover;
     padding: 10px;
@@ -94,7 +95,7 @@ body {
     color: var(--text-color);
     max-width: 100%; 
     margin:  auto;
-    padding: 0 30px;
+    padding: 10px 10px 10px 10px;
     display: inline-block;
 }
 
@@ -131,7 +132,7 @@ h2, h3{
 
 .image-container {
     display: inline-block;
-    margin: 5px;
+    margin: -30px;
     text-align: center;
 }
 
