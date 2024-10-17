@@ -1,18 +1,49 @@
 :root {
-    --tittles-font: "";
-    --family-font2: "";
+    --family-font: "Roboto", sans-serif;;
 
+}
+input[type="text"],
+input[type="email"] {
+    width: 350px; 
+    max-width: 400px;
 }
 .form-item {
     display: grid;
     align-items: center;
 }
 .column1 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 5px;
     margin: 0.5rem 0;
 }
+.column1 label {
+    text-align: center;
+}
+
+.column2 label{
+    text-align: right;
+    padding-right: 10px;
+}
 .column2{
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1px;
+}
+.browser-select {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.browser-select label {
+    text-align: center;
+    padding-right: 15px;
+    font-size: 19px;
+}
+
+.browser-select select {
+    width: 150px; /* Ajusta este valor según el tamaño que prefieras */
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 * {
     margin: 0;
@@ -21,7 +52,7 @@
 }
 
 body{
-    font-family: var(--family-font2);
+    font-family: var(--family-font);
     font-size: 1.2em;
     color: #333;
     background-color: #fff;
@@ -58,16 +89,31 @@ legend{
     font-size: 1.3em;
 }
 label, input, button, select, textarea {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--family-font);
 }
-label{
-    text-align: right;
-    padding-right: 1rem;
-}
+
 input, select, textarea{
     padding: 0.5rem;
     font-size: 1.1rem;
 }
+select {
+    width: 100px; 
+    max-width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem; 
+}
+
+.checkbox-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-item label {
+    text-align: center;
+    padding-right: 10px;
+}
+
 input [type="checkbox"] {
     width: 22px;
     height: 22px;
@@ -81,7 +127,11 @@ button{
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
+    width: fit-content;
+    display: flex;
+    justify-self: center;
 }
+
 button:hover{
     background-color: darkgreen;
 }
