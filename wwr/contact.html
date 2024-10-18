@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="description" content="contact information about the page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Mendoza">
+    <title>Connect with Our Team</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <img src="images/logo.jpg" alt="Logo Rafting" width="100">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>   
+            <a href="trips.html">Trips</a> 
+            <a href="contact.html">Contact Us</a>   
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <address>
+                <p>123 River Adventure Street</p>
+                <p>Rapids City, RC 12345</p>
+                <p>United States</p>
+            </address>
+            <h3>Phone Numbers:</h3>
+            <ul>
+                <li>Main Office: <a href="tel:+1234567890">(123) 456-7890</a></li>
+                <li>Customer Service: <a href="tel:+1987654321">(987) 654-3210</a></li>
+            </ul>
+            <h3>Email:</h3>
+            <p><a href="mailto:info@bestriverrafting.com">info@bestriverrafting.com</a></p>
+        </section>
+        
+        <section class="map">
+            <h2>Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-123.4567890!3d45.6789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQwJzQ0LjAiTiAxMjPCsDI3JzI0LjQiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="images/employee1.jpg" alt="Jane Doe">
+                <p>Jane Doe - River Guide Extraordinaire</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="John Smith">
+                <p>John Smith - Safety Expert</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Mary Johnson">
+                <p>Mary Johnson - Customer Experience Manager</p>
+            </div>
+        </section>
+    
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
+                    <label for="inquiry">General Inquiry</label>
+    
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+    
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
+    
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 / Best River Rafting BY Santiago Mendoza / </p>
+        <div class="sociallinks">
+                <a href="https://www.facebook.com">
+                <img src="images/facebook.svg" alt="Facebok" width="40">
+                </a>
+                <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram" width="40">
+                </a>
+                <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter" width="40">
+                </a>
+        </div>
+    </footer>
+</body>
+</html>
