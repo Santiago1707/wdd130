@@ -5,7 +5,7 @@
     --text-color: #0A0B0A;       
     --background-color: #FFFFFF; 
     --font-family1: "Space Grotesk", serif;
-    --font-family2: "Afacad Flux", sans-serif
+    --font-family2: "Afacad Flux", sans-serif;
 }
 
 .main-nav {
@@ -299,4 +299,4 @@ footer > p {
 
 .map iframe {
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
