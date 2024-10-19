@@ -173,8 +173,6 @@ footer > p {
     justify-content: flex-end;
     gap: 10px;
 }
-/* Añade esto a tu archivo rafting.css existente */
-
 /* Estilos para la sección de perfiles de empleados */
 .employee-profiles {
     display: flex;
