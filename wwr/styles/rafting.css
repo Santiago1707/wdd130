@@ -216,6 +216,9 @@ h1 {
 .info-box a:hover {
     text-decoration: underline;
 }
+.map iframe {
+    border: 2px solid var(--secondary-color);
+}
 .employee-profiles {
     display: flex;
     flex-wrap: wrap;
