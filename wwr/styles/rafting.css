@@ -8,31 +8,79 @@
     --font-family2: "Afacad Flux", sans-serif;
 }
 
-.main-nav {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+@media (max-width: 768px) {
+    /* Estilos para la sección de historia */
+    .history-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history-text {
+        flex-basis: 90%;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .history-wrap img {
+        width: 90%;
+        margin: 10px;
+    }
+
+    /* Estilos para la sección de aventuras */
+    .image-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin: 10px 0;
+    }
+
+    .image-container img {
+        width: 90%;
+        max-width: 400px;
+    }
+    }
+    .main-nav {
+        grid-template-columns: auto repeat(4, 1fr);
+    }
+    
+
+
+header {
     background-color: var(--primary-color);
-    padding: 30px;
-    border-top: solid 10px var(--background-color);
-    border-bottom: solid 10px var(--background-color);
-    border-left: solid 10px var(--background-color);
-    border-right:  solid 7px var(--background-color);
+    padding: 1rem;
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1rem;
+    align-items: center;
 }
 
 .main-nav img {
-    margin-right: 20%;
-    margin-left: 10%;
+    grid-column: 1 / 2;
+    margin-right: 250px;
+    margin-left: 40%;
     width: 150px;
     border-radius: 50px;
 }
 
 .main-nav a {
-    margin: 0 60px;
-    color: var(--background-color);
     text-decoration: none;
+    color: var(--background-color);
+    font-weight: bold;
     font-size: 20px;
     font-family: var(--font-family1);
+    margin: 0 71px;
+}
+
+    .main-nav div {
+    grid-column: 2 / -1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1px;
 }
 
 .hero {
@@ -41,14 +89,47 @@
 
 .hero img {
     width: 99%; 
-    height: 100vh; 
+    height: 90vh; 
     object-fit: cover;
     padding: 10px;
 }
 
+.hero.home-hero{
+    width: 98cqmax;
+    height: 500px; 
+}
+
+.hero.home-hero img {
+    width: 99%;
+    height: 100%;
+    padding: 10px;
+    object-fit: cover;
+}
+.home-hero h1 {
+    bottom: 100%;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,10);
+}
+
+.hero.contact-hero {
+    width: 98cqmax;
+    height: 500px;
+}
+
+.hero.contact-hero img {
+    width: 99%;
+    height: 100%;
+    padding: 10px;
+}
+.contact-hero h1 {
+    bottom: 100%;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,10);
+}
+
 .hero h1 {
     position: absolute; 
-    top: 10%; 
+    top: 20%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     z-index: 2; 
@@ -172,24 +253,29 @@ footer > p {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    text-decoration-color: #FFFFFF;
 }
-/* Estilos para la sección de perfiles de empleados */
+.white-link {
+    color: #FFFFFF; 
+    text-decoration: none; 
+}
+
 h1 {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin-top: 20px; /* Ajusta el margen superior si es necesario */
+    text-align: center; 
+    margin-top: 20px; 
 }
 .company-info {
     display: flex;
     justify-content: space-between;
     margin: 40px 0;
-    gap: 40px; /* Añade espacio entre los cuadros */
+    gap: 40px;
 }
 
 .info-box {
-    flex-basis: calc(33.33% - 40px); /* Ajusta el ancho considerando el gap */
+    flex-basis: calc(33.33% - 40px);
     padding: 20px;
     background-color: var(--background-color);
-    border: 2px solid var(--secondary-color); /* Cambia el borde a verde */
+    border: 2px solid var(--secondary-color); 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -247,7 +333,6 @@ h1 {
     color: var(--primary-color);
 }
 
-/* Estilos para el formulario de contacto */
 .contact-form {
     max-width: 600px;
     margin: 40px auto;
@@ -328,7 +413,6 @@ h1 {
     background-color: var(--accent-color);
 }
 
-/* Estilos para la sección del mapa */
 .map {
     text-align: center;
     margin: 40px 0;
@@ -343,3 +427,232 @@ h1 {
 .map iframe {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+.newsletter-signup {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.newsletter-signup h2 {
+    color: var(--background-color);
+    margin-bottom: 1rem;
+}
+
+.newsletter-signup form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newsletter-signup input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter-signup button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para la llamada a la acción (CTA) */
+.cta {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: var(--primary-color);
+}
+
+.cta h2 {
+    color: var(--background-color);
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Estilos para la sección de cuadrícula */
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.grid-item {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid-item h3 {
+    color: var(--primary-color);
+    padding: 1rem;
+    margin: 0; 
+}
+
+.grid-item p {
+    color: var(--text-color);
+    padding: 0 1rem 1rem;
+    margin: 0; 
+    max-width: 80%; 
+}
+/* Styles for the trips hero section */
+.trips-hero {
+    height: 60vh;
+}
+
+.trips-hero img {
+    width: 99%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trips-hero h1 {
+    top: 50%;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+}
+
+/* Styles for the Call to Action section */
+.cta-contact {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.cta-contact h2 {
+    color: var(--background-color);
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--font-family1);
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Styles for trip descriptions */
+.trip-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.trip {
+    flex-basis: 30%;
+    margin-bottom: 2rem;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.trip img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip h3 {
+    color: var(--primary-color);
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.trip p {
+    color: var(--text-color);
+    padding: 0 1rem 1rem;
+    font-family: var(--font-family2);
+}
+
+/* Styles for the trip table */
+.trip-table {
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--background-color);
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid var(--primary-color);
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    font-family: var(--font-family1);
+}
+
+.trip-table td {
+    font-family: var(--font-family2);
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: rgba(129, 225, 20, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .trip-descriptions {
+        flex-direction: column;
+    }
+
+    .trip {
+        flex-basis: 100%;
+    }
+
+    .trips-hero h1 {
+        font-size: 2em;
+    }
+}
+
